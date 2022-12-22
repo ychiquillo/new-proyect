@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Course evaluation form</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="fondo">
+    <h1 id="title">Course evaluation form</h1>
+    <p id="description">In this form we will evaluate how the course methodology and its facilities have been.<p>
+      <form id="survey-form">
+
+        <fieldset>
+          <label for="name:" id="name-label">Full name:<input placeholder="enter name" type="text" id="name" required>
+            </label>
+          <label for="email" id="email-label">Email:<input placeholder="enter email" type="email" id="email" required>
+            </label>
+            <label for="number" id="number-label">Age:<input placeholder="number" type="number" id="number" min="16" max="90" required>
+            </label>
+          </fieldset>
+
+
+        <fieldset>
+        <label for="Academic-account"><input value="Academic" id="Academic-account" type="radio" name="account-type" class="inline" /> Academic Account</label>
+
+        <label for="business-account"><input value="business" id="business-account" type="radio" name="account-type" class="inline" /> Business Account</label>
+
+        <label for="Other"><input value="Other" id="Other" type="radio" name="account-type" class="inline" /> Other
+        </label>
+
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="If it is another, indicate the type of account..."></textarea>
+      </fieldset>
+
+
+      <fieldset>
+        <label for="dropdown">calificacion del curso
+          <select id="dropdown" name="dropdown">
+            <option value="">(select)</option>
+            <option value="1">Bad</option>
+            <option value="2">Regular</option>
+            <option value="3">Good</option>
+            <option value="4">Excellent</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="verificacion" /> Recommend the course.
+        </label>
+
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="verificacion" /> I would study another course with FreecodeCamp.
+        </label>
+          </fieldset>
+      <input  id="submit" type="submit" onclick="alert('NO SIRVE');">
+        </form>
+      </div>
+      
+
+    </body>
+  <html>
+    
